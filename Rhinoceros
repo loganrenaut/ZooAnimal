@@ -1,0 +1,34 @@
+public class Rhinoceros implements iAnimal {
+    private final String animalType = "Rhinoceros";
+    private int anIdTag;
+    private final int minTemperature = -2; // Temperature in Fahrenheit
+    private final int maxTemperature = 93; // Temperature in Fahrenheit
+
+    @Override
+    public String getAnimalType() {
+        return animalType;
+    }
+
+    @Override
+    public int getIdTag() {
+        return anIdTag;
+    }
+
+    @Override
+    public void setIdTag(int anIdTag) {
+        this.anIdTag = anIdTag;
+
+    }
+
+   
+    @Override
+    public int getMinTemperature() {
+        return minTemperature;
+    }
+
+   
+    @Override
+    public int getMaxTemperature() {
+        return maxTemperature;
+    }
+}
